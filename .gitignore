@@ -1,0 +1,22 @@
+# --- CMake ---
+build/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# --- Qt Generated ---
+*_autogen/
+ui_*.h
+qrc_*.cpp
+moc_*.cpp
+*.moc
+
+# --- macOS ---
+.DS_Store
+
+# --- VS Code ---
+.vscode/
