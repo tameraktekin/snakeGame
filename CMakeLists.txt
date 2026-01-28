@@ -13,6 +13,8 @@ add_executable(snakeGame
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
+    snake.cpp
+    snake.h
 )
 
 target_link_libraries(snakeGame PRIVATE Qt6::Widgets)
