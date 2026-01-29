@@ -16,7 +16,8 @@ MainWindow::~MainWindow() {
 
 void MainWindow::setupScene() {
     scene = new QGraphicsScene(this);
-    scene->setSceneRect(0, 0, 470, 470); // Set scene size
+    scene->setSceneRect(0, 0, 
+                        Constants::Grid::WIDTH, Constants::Grid::HEIGHT); // Set scene size
 
     ui->gameView->setScene(scene);
     ui->gameView->setRenderHint(QPainter::Antialiasing);
