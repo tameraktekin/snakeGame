@@ -1,5 +1,7 @@
-# --- CMake ---
+# --- Build Directory ---
 build/
+
+# --- CMake ---
 CMakeCache.txt
 CMakeFiles/
 CMakeScripts/
