@@ -1,7 +1,7 @@
 #include "snake.h"
 
 Snake::Snake(BodyType type, QGraphicsItem *parent) : QGraphicsRectItem(parent) {
-    setRect(0, 0, 10, 10);
+    setRect(0, 0, 9, 9);
     m_type = type;
     currentDirection = Direction::RIGHT;
 }
@@ -75,4 +75,21 @@ void Snake::changeDirection(Direction newDirection) {
     }
     
     currentDirection = newDirection;
+}
+
+bool Snake::checkCollision(QList<QGraphicsItem *> &items) const{
+    // Check for collision with body parts
+    for (auto item : items) {
+        Snake* part = dynamic_cast<Snake*>(item);
+        if (part && part->m_type == BodyType::BODY) {
+            return true; // Collision detected
+        }
+    }
+    return false;
+}
+
+Snake* Snake::grow() {
+    Snake* newBodyPart = new Snake(BodyType::BODY);
+    newBodyPart->setPos(this->pos());
+    return newBodyPart;
 }

@@ -15,6 +15,8 @@ add_executable(snakeGame
     mainwindow.ui
     snake.cpp
     snake.h
+    food.cpp
+    food.h
 )
 
 target_link_libraries(snakeGame PRIVATE Qt6::Widgets)

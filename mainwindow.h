@@ -7,6 +7,7 @@
 #include <QTimer>
 #include <QKeyEvent>
 #include "snake.h"
+#include "food.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -27,6 +28,8 @@ private:
     QGraphicsScene *scene;
     QList<Snake*> snake;
     QTimer timer;
+    Food *food;
+    int score;
 
     void keyPressEvent(QKeyEvent *event) override;
 
@@ -36,5 +39,8 @@ private:
     void createSnake();
     void createHead();
     void createBody();
+    void createFood();
+    bool checkFoodCollision();
+    void updateScoreDisplay();
 };
 #endif

@@ -10,6 +10,11 @@
     <height>550</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <family>Courier New</family>
+   </font>
+  </property>
   <property name="windowTitle">
    <string>Snake</string>
   </property>

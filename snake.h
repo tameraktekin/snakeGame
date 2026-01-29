@@ -27,6 +27,8 @@ public:
 
     QPointF move(const QPointF& previousPosition);
     void changeDirection(Direction newDirection);
+    Snake* grow();
+    bool checkCollision(QList<QGraphicsItem *> &items) const;
 
 protected:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
