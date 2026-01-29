@@ -4,10 +4,7 @@
 #include <QMainWindow>
 #include <QGraphicsView>
 #include <QGraphicsScene>
-#include <QTimer>
-#include <QKeyEvent>
-#include "snake.h"
-#include "food.h"
+#include "gamemanager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -20,27 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void gameLoop();
-
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
-    QList<Snake*> snake;
-    QTimer timer;
-    Food *food;
-    int score;
-
-    void keyPressEvent(QKeyEvent *event) override;
+    GameManager *gameManager;
 
     void setupScene();
-    void setupGame();
-    void setupTimer();
-    void createSnake();
-    void createHead();
-    void createBody();
-    void createFood();
-    bool checkFoodCollision();
-    void updateScoreDisplay();
+    void setupGameManager();
+    void updateScoreDisplay(int score);
+    void keyPressEvent(QKeyEvent *event) override;
 };
 #endif

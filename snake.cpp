@@ -1,7 +1,7 @@
 #include "snake.h"
 
 Snake::Snake(BodyType type, QGraphicsItem *parent) : QGraphicsRectItem(parent) {
-    setRect(0, 0, 9, 9);
+    setRect(0, 0, Constants::TILE_SIZE, Constants::TILE_SIZE);
     m_type = type;
     currentDirection = Direction::RIGHT;
 }
@@ -21,36 +21,49 @@ void Snake::paint (QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 }
 
 void Snake::drawHead(QPainter *painter) {
-    painter->setBrush(Qt::green);
+    painter->setBrush(Constants::Snake::COLOR);
     painter->setPen(Qt::NoPen);
-    painter->drawRoundedRect(rect(), 4, 4);
+    painter->drawRoundedRect(rect(), 
+                             Constants::Snake::HEAD_ROUNDING,
+                             Constants::Snake::HEAD_ROUNDING);
 }
 
 void Snake::drawBody(QPainter *painter) {
-    painter->setBrush(Qt::green);
+    painter->setBrush(Constants::Snake::COLOR);
     painter->setPen(Qt::NoPen);
-    painter->drawRoundedRect(rect(), 2, 2);
+    painter->drawRoundedRect(rect(), 
+                             Constants::Snake::BODY_ROUNDING,
+                             Constants::Snake::BODY_ROUNDING);
 }
 
 QPointF Snake::move(const QPointF& previousPosition) {
     QPointF currentPosition = pos();
     if (m_type == BodyType::HEAD) {
         switch (currentDirection){
-        case Direction::UP:
-            setPos(x(), static_cast<qreal>((static_cast<int>(y()) - 10 + 470) % 470)); // Move up by 10 units
-            break;
-        case Direction::DOWN:
-            setPos(x(), static_cast<qreal>((static_cast<int>(y()) + 10) % 470)); // Move down by 10 units
-            break;
-        case Direction::LEFT:
-            setPos(static_cast<qreal>((static_cast<int>(x()) - 10 + 470) % 470), y()); // Move left by 10 units
-            break;
-        case Direction::RIGHT:
-            setPos(static_cast<qreal>((static_cast<int>(x()) + 10) % 470), y()); // Move right by 10 units
-            break;
+            case Direction::UP:
+                setPos(x(), 
+                    static_cast<qreal>((static_cast<int>(y()) - Constants::MOVE_DISTANCE + 
+                    Constants::Grid::HEIGHT) % Constants::Grid::HEIGHT)); // Move up by MOVE_DISTANCE units
+                break;
 
-        default:
-            break;
+            case Direction::DOWN:
+                setPos(x(), 
+                    static_cast<qreal>((static_cast<int>(y()) + Constants::MOVE_DISTANCE) % 
+                    Constants::Grid::HEIGHT)); // Move down by MOVE_DISTANCE units
+                break;
+
+            case Direction::LEFT:
+                setPos(static_cast<qreal>((static_cast<int>(x()) - Constants::MOVE_DISTANCE + 
+                    Constants::Grid::WIDTH) % Constants::Grid::WIDTH), y()); // Move left by MOVE_DISTANCE units
+                break;
+
+            case Direction::RIGHT:
+                setPos(static_cast<qreal>((static_cast<int>(x()) + Constants::MOVE_DISTANCE) % 
+                    Constants::Grid::WIDTH), y()); // Move right by MOVE_DISTANCE units
+                break;
+
+            default:
+                break;
         }
     }
     else {

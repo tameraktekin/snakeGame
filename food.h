@@ -7,6 +7,7 @@
 #include <QPen>
 #include <QPainter>
 #include <QRandomGenerator>
+#include "constants.h"
 
 class Food : public QGraphicsRectItem {
 public:

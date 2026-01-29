@@ -5,6 +5,7 @@
 #include <QBrush>
 #include <QPen>
 #include <QPainter>
+#include "constants.h"
 
 // Direction enumeration
 enum class Direction {
