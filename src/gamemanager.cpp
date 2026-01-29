@@ -1,7 +1,7 @@
 #include "gamemanager.h"
 
 GameManager::GameManager(QGraphicsScene* scene) 
-    : QObject(), scene(scene), food(nullptr), score(0) {
+    : QObject(), scene(scene), food(nullptr), score(0), scoreMilestone(Constants::Speed::SCORE_INIT_MILESTONE) {
     
     setupGame();
 }
@@ -10,6 +10,7 @@ void GameManager::setupGame() {
     createSnake();
     setupTimer();
     createFood();
+    setupSpeedHandling();
 }
 
 void GameManager::createSnake() {
@@ -20,23 +21,23 @@ void GameManager::createSnake() {
 void GameManager::createHead() {
     Snake *snakeHead = new Snake(BodyType::HEAD);
     scene->addItem(snakeHead);
-    snakeHead->setPos(200, 200); 
+    snakeHead->setPos(Constants::Snake::INITIAL_SNAKE_POS, Constants::Snake::INITIAL_SNAKE_POS); 
     snake.append(snakeHead);
 }
 
 void GameManager::createBody() {
-    for (size_t i = 1; i < 4; i++)
+    for (size_t i = 1; i < Constants::Snake::INITIAL_SNAKE_LENGTH; i++)
     {
         Snake *snakeBody = new Snake(BodyType::BODY);
         scene->addItem(snakeBody);
-        snakeBody->setPos(200 - i * 10, 200);
+        snakeBody->setPos(Constants::Snake::INITIAL_SNAKE_POS - i * Constants::MOVE_DISTANCE, Constants::Snake::INITIAL_SNAKE_POS);
         snake.append(snakeBody);
     }
 }
 
 void GameManager::setupTimer() {
     connect(&timer, &QTimer::timeout, this, &GameManager::gameLoop);
-    timer.start(100); // Game loop every 100 ms
+    timer.start(Constants::Speed::INITIAL_SPEED); // Game loop every 100 ms
 }
 
 void GameManager::gameLoop() {
@@ -48,6 +49,7 @@ void GameManager::gameLoop() {
             QList<QGraphicsItem *> itemsAtHeadPos = scene->items(previousPosition);
             if (snake.first()->checkCollision(itemsAtHeadPos)) {
                 timer.stop();
+                gameOver(score);
                 return;
             }
         }      
@@ -94,7 +96,7 @@ void GameManager::keyPressed(QKeyEvent *event) {
 }
 
 void GameManager::createFood() {
-    food = new Food(470, 470);
+    food = new Food(Constants::Grid::WIDTH, Constants::Grid::HEIGHT);
 
     while (checkFoodCollision()) {
         food->generateNewPosition();
@@ -109,4 +111,31 @@ bool GameManager::checkFoodCollision() {
         }
     }
     return false; // No collision
+}
+
+void GameManager::setupSpeedHandling() {
+    connect(this, &GameManager::scoreChanged, 
+        this, &GameManager::handleSpeedIncrease);
+}
+
+bool GameManager::checkScoreMilestone() {
+    if (score % scoreMilestone == 0) {
+        scoreMilestone *= Constants::Speed::SCORE_MILESTONE_MULTIPLIER;
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+void GameManager::handleSpeedIncrease() {
+    if (checkScoreMilestone())
+    {
+        int currentInterval = timer.interval();
+        int newInterval = currentInterval - Constants::Speed::SPEED_INCREMENT;
+        if (newInterval < Constants::Speed::MIN_SPEED) {
+            newInterval = Constants::Speed::MIN_SPEED;
+        }
+        timer.setInterval(newInterval);
+    }
 }

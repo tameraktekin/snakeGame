@@ -4,8 +4,15 @@
 
 namespace Constants {
     const int TILE_SIZE = 9;
-    const int INITIAL_SPEED = 100; // ms
     const int MOVE_DISTANCE = 10;
+
+    namespace Speed {
+        const int INITIAL_SPEED = 100; // in milliseconds
+        const int SPEED_INCREMENT = 10; // in milliseconds
+        const int MIN_SPEED = 20; // in milliseconds
+        const int SCORE_INIT_MILESTONE = 100; // in points
+        const int SCORE_MILESTONE_MULTIPLIER = 10; // in points
+    }
 
     namespace Grid {
         const int WIDTH = 470;

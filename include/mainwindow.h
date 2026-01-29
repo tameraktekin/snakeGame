@@ -26,5 +26,8 @@ private:
     void setupGameManager();
     void updateScoreDisplay(int score);
     void keyPressEvent(QKeyEvent *event) override;
+    void handleGameOver(int finalScore);
+    QMessageBox* createGameOverBox(int finalScore);
+    void resetGame();
 };
 #endif
