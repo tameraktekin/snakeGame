@@ -53,6 +53,8 @@ void MainWindow::handleGameOver(int finalScore) {
         default:
             break;
     }
+
+    delete gameOverBox;
 }
 
 QMessageBox* MainWindow::createGameOverBox(int finalScore) {
@@ -67,10 +69,9 @@ QMessageBox* MainWindow::createGameOverBox(int finalScore) {
 }
 
 void MainWindow::resetGame() {
-    delete scene;
-    setupScene();
-
     delete gameManager;
+
+    setupScene();
     setupGameManager();
 
     ui->scoreLabel->setText("Score: 0");

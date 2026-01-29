@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/sounds/eat.wav</file>
+        <file>assets/sounds/gameOver.wav</file>
+    </qresource>
+</RCC>

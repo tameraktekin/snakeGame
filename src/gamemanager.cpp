@@ -6,11 +6,19 @@ GameManager::GameManager(QGraphicsScene* scene)
     setupGame();
 }
 
+GameManager::~GameManager() {
+    delete audioManager;
+    delete food;
+    delete scene;
+    snake.clear();
+}
+
 void GameManager::setupGame() {
     createSnake();
     setupTimer();
     createFood();
     setupSpeedHandling();
+    setupAudioManager();
 }
 
 void GameManager::createSnake() {
@@ -89,7 +97,6 @@ void GameManager::keyPressed(QKeyEvent *event) {
             newDirection = Direction::RIGHT;
             break;
         default:
-            GameManager::keyPressed(event);
             return;
     }
     snake.first()->changeDirection(newDirection);
@@ -138,4 +145,12 @@ void GameManager::handleSpeedIncrease() {
         }
         timer.setInterval(newInterval);
     }
+}
+
+
+void GameManager::setupAudioManager() {
+    audioManager = new AudioManager(this);
+
+    connect(this, &GameManager::scoreChanged, audioManager, &AudioManager::playEatSound);
+    connect(this, &GameManager::gameOver, audioManager, &AudioManager::playGameOverSound);
 }

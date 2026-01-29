@@ -31,4 +31,8 @@ namespace Constants {
         const QColor COLOR = Qt::yellow;
         const int SIZE = 10;
     }
+    namespace Audio {
+        const QString SOUND_EFFECT_EAT = ":/assets/sounds/eat.wav";
+        const QString SOUND_EFFECT_GAME_OVER = ":/assets/sounds/gameOver.wav";
+    }
 }

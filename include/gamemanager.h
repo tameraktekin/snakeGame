@@ -10,6 +10,7 @@
 #include "snake.h"
 #include "food.h"
 #include "constants.h"
+#include "audiomanager.h"
 
 
 class GameManager : public QObject {
@@ -17,6 +18,8 @@ class GameManager : public QObject {
 
 public:
     GameManager(QGraphicsScene* scene);
+    ~GameManager();
+
     void keyPressed(QKeyEvent *event);
 
 signals:
@@ -33,10 +36,12 @@ private:
     QTimer timer;
     int score;
     int scoreMilestone;
+    AudioManager* audioManager;
 
     void setupGame();
     void setupTimer();
     void setupSpeedHandling();
+    void setupAudioManager();
     void createSnake();
     void createHead();
     void createBody();
