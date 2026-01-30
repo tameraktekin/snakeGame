@@ -13,6 +13,13 @@
 #include "audiomanager.h"
 
 
+/**
+ * @class GameManager
+ * @brief The brain of the Snake game.
+ * * Coordinates the interaction between the Snake, Food, and AudioManager.
+ * It manages the game loop timer and handles score progression.
+ */
+
 class GameManager : public QObject {
     Q_OBJECT
 

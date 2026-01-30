@@ -1,0 +1,23 @@
+# Project Metadata
+PROJECT_NAME            = "@CMAKE_PROJECT_NAME@"
+PROJECT_NUMBER          = "1.0"
+OUTPUT_DIRECTORY        = "docs"
+
+# Input Settings
+INPUT                  = "@CMAKE_CURRENT_SOURCE_DIR@"
+RECURSIVE              = YES
+FILE_PATTERNS          = *.h *.cpp *.md
+
+# Extraction Settings
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+
+# HTML Output Settings
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+
+# Build Settings
+QUIET                  = NO
+WARNINGS               = YES

@@ -21,7 +21,13 @@ enum class BodyType {
     BODY
 };
 
-// Snake class
+/**
+ * @class Snake
+ * @brief Represents a single segment of the snake (Head or Body).
+ * * Inherits from QGraphicsRectItem. Handles its own movement logic 
+ * and collision detection with other scene items.
+ */
+
 class Snake : public QGraphicsRectItem {
 public:
     Snake(BodyType type, QGraphicsItem *parent = nullptr);

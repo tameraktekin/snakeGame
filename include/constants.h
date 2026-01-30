@@ -1,6 +1,12 @@
 #pragma once
 #include <QColor>
 
+/**
+ * @file constants.h
+ * @brief Global configuration and magic numbers for the Snake game.
+ * * Centralizes all gameplay tuning parameters like speed, grid dimensions, 
+ * and scoring logic to ensure consistency across the engine.
+ */
 
 namespace Constants {
     const int TILE_SIZE = 9;

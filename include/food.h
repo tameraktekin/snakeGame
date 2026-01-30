@@ -9,6 +9,13 @@
 #include <QRandomGenerator>
 #include "constants.h"
 
+/**
+ * @class Food
+ * @brief Represents the consumable item that appears on the grid.
+ * * Responsible for generating random positions that are perfectly 
+ * aligned with the TILE_SIZE grid.
+ */
+
 class Food : public QGraphicsRectItem {
 public:
     Food(int maxWidth, int maxHeight, QGraphicsItem *parent = nullptr);
