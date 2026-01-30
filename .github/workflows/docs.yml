@@ -3,6 +3,11 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build-docs:
     runs-on: ubuntu-latest
@@ -13,11 +18,12 @@ jobs:
         run: sudo apt-get install -y doxygen graphviz
         
       - name: Run Doxygen
-        run: doxygen Doxyfile.in 
+        run: |
+          mkdir -p output_docs
+          (cat Doxyfile.in; echo "OUTPUT_DIRECTORY = output_docs") | doxygen -
         
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs/html 
-
+          publish_dir: ./output_docs/html
