@@ -17,7 +17,7 @@ var searchData=
   ['snake_14',['snake',['../classSnake.html#a0553b3ee7a4ee8f9bb041157f6fbd2f8',1,'Snake::Snake()'],['../classGameManager.html#ab6c9b410bfc0a601c87577d629c5243c',1,'GameManager::snake'],['../namespaceSnake.html',1,'Snake'],['../classSnake.html',1,'Snake']]],
   ['snake_2ecpp_15',['snake.cpp',['../snake_8cpp.html',1,'']]],
   ['snake_2eh_16',['snake.h',['../snake_8h.html',1,'']]],
-  ['snakegame_17',['snakegame',['../md_README.html',1,'🐍 SnakeGame'],['../md_README.html#autotoc_md1',1,'🐍 SnakeGame']]],
+  ['snakegame_17',['🐍 SnakeGame',['../md_README.html',1,'']]],
   ['snaketest_18',['SnakeTest',['../classSnakeTest.html',1,'']]],
   ['sound_5feffect_5feat_19',['SOUND_EFFECT_EAT',['../namespaceConstants_1_1Audio.html#a52ac8cf4c3e2cc22e20e05fc4c6656a2',1,'Constants::Audio']]],
   ['sound_5feffect_5fgame_5fover_20',['SOUND_EFFECT_GAME_OVER',['../namespaceConstants_1_1Audio.html#a2dc9e7a04283d2e19f34ab744b0044f5',1,'Constants::Audio']]],
@@ -25,6 +25,6 @@ var searchData=
   ['soundeffectplayereat_22',['soundEffectPlayerEat',['../classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d',1,'AudioManager']]],
   ['speed_23',['Speed',['../namespaceSpeed.html',1,'']]],
   ['speed_5fincrement_24',['SPEED_INCREMENT',['../namespaceConstants_1_1Speed.html#aa3f282e0b9bc23000b9ee2a459bcd747',1,'Constants::Speed']]],
-  ['started_25',['💻 Getting Started',['../md_README.html#autotoc_md17',1,'']]],
-  ['structure_26',['📂 Project Structure',['../md_README.html#autotoc_md24',1,'']]]
+  ['started_25',['💻 Getting Started',['../md_README.html#autotoc_md16',1,'']]],
+  ['structure_26',['📂 Project Structure',['../md_README.html#autotoc_md23',1,'']]]
 ];
