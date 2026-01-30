@@ -30,6 +30,8 @@ public:
     void changeDirection(Direction newDirection);
     Snake* grow();
     bool checkCollision(QList<QGraphicsItem *> &items) const;
+    Direction getDirection() const { return currentDirection; }
+    BodyType getBodyType() const { return m_type; }
 
 protected:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;

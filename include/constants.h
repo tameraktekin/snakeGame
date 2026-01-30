@@ -5,6 +5,7 @@
 namespace Constants {
     const int TILE_SIZE = 9;
     const int MOVE_DISTANCE = 10;
+    const int SCORE_PER_FOOD = 10;
 
     namespace Speed {
         const int INITIAL_SPEED = 100; // in milliseconds

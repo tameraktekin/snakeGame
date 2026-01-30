@@ -42,3 +42,22 @@ set_source_files_properties(${RESOURCES} PROPERTIES SKIP_AUTOGEN OFF)
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS} ${RESOURCES})
 
 target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Widgets Qt6::Multimedia)
+
+find_package(Qt6 REQUIRED COMPONENTS Test)
+
+# Create a test executable
+add_executable(snakeTests 
+    tests/testmain.cpp 
+    src/snake.cpp     
+    src/food.cpp
+    src/gamemanager.cpp
+    src/audiomanager.cpp
+    include/snake.h
+    include/food.h
+    include/gamemanager.h
+    include/audiomanager.h
+)
+
+target_include_directories(snakeTests PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+
+target_link_libraries(snakeTests PRIVATE Qt6::Test Qt6::Widgets Qt6::Multimedia)

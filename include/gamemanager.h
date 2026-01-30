@@ -21,6 +21,9 @@ public:
     ~GameManager();
 
     void keyPressed(QKeyEvent *event);
+    int getSnakeLength() const { return snake.size(); }
+    int getScore() const { return score; }
+    QPointF getSnakePosition() const { return snake.first()->pos(); }
 
 signals:
     void scoreChanged(int newScore);

@@ -9,7 +9,6 @@ GameManager::GameManager(QGraphicsScene* scene)
 GameManager::~GameManager() {
     delete audioManager;
     delete food;
-    delete scene;
     snake.clear();
 }
 
@@ -45,6 +44,7 @@ void GameManager::createBody() {
 
 void GameManager::setupTimer() {
     connect(&timer, &QTimer::timeout, this, &GameManager::gameLoop);
+    timer.setParent(this);
     timer.start(Constants::Speed::INITIAL_SPEED); // Game loop every 100 ms
 }
 
@@ -70,7 +70,7 @@ void GameManager::gameLoop() {
         scene->addItem(newBodyPart);
         snake.append(newBodyPart);
 
-        score += 10;
+        score += Constants::SCORE_PER_FOOD;
         scoreChanged(score);
 
         do
