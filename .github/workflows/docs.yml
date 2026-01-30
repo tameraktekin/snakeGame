@@ -19,16 +19,16 @@ jobs:
         
       - name: Run Doxygen
         run: |
-          
           mkdir -p output_docs
-          
-          (cat Doxyfile.in; 
-           echo "INPUT = ."; 
-           echo "RECURSIVE = YES"; 
-           echo "OUTPUT_DIRECTORY = output_docs"; 
-           echo "HTML_OUTPUT = html") | doxygen -
-          
-          ls -R output_docs/html
+          # We manually set the Project Name and tell it to scan the root directory
+          (echo "PROJECT_NAME = \"Snake Game\""; \
+           echo "INPUT = ."; \
+           echo "RECURSIVE = YES"; \
+           echo "FILE_PATTERNS = *.h *.cpp *.md"; \
+           echo "OUTPUT_DIRECTORY = output_docs"; \
+           echo "HTML_OUTPUT = html"; \
+           echo "GENERATE_HTML = YES"; \
+           echo "USE_MDRIP = YES") | doxygen -
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
