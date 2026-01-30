@@ -7,7 +7,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     
     setupScene();
-    setupGameManager();
+    connect(ui->startButton, &QPushButton::clicked, this, &MainWindow::setupGameManager);
 }
 
 MainWindow::~MainWindow() {
@@ -29,6 +29,7 @@ void MainWindow::setupGameManager() {
     gameManager = new GameManager(scene);
     connect(gameManager, &GameManager::scoreChanged, this, &MainWindow::updateScoreDisplay);
     connect(gameManager, &GameManager::gameOver, this, &MainWindow::handleGameOver);
+    ui->startButton->setEnabled(false);
 }
 
 void MainWindow::keyPressEvent(QKeyEvent *event) {
