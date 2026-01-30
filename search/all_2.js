@@ -1,4 +1,21 @@
 var searchData=
 [
-  ['food_0',['Food',['../classFood.html',1,'']]]
+  ['changedirection_0',['changeDirection',['../classSnake.html#abeaad0b82eecaeef753c8cf4e6407695',1,'Snake']]],
+  ['checkcollision_1',['checkCollision',['../classSnake.html#adff787257f39eb7d2aa24fd41c659871',1,'Snake']]],
+  ['checkfoodcollision_2',['checkFoodCollision',['../classGameManager.html#aebf7e76a2116689de53d1415aa9bb28f',1,'GameManager']]],
+  ['checkscoremilestone_3',['checkScoreMilestone',['../classGameManager.html#ae61421728a2ccb062b8d3a39d3c833f4',1,'GameManager']]],
+  ['color_4',['color',['../namespaceConstants_1_1Food.html#aa8be855b7a44a47774551e8b8a9694fb',1,'Constants::Food::COLOR'],['../namespaceConstants_1_1Snake.html#ab3e4d2a7ef853b7a9b13f73f7ee3bf14',1,'Constants::Snake::COLOR']]],
+  ['constants_5',['Constants',['../namespaceConstants.html',1,'']]],
+  ['constants_2eh_6',['constants.h',['../constants_8h.html',1,'']]],
+  ['constants_3a_3aaudio_7',['Audio',['../namespaceConstants_1_1Audio.html',1,'Constants']]],
+  ['constants_3a_3afood_8',['Food',['../namespaceConstants_1_1Food.html',1,'Constants']]],
+  ['constants_3a_3agrid_9',['Grid',['../namespaceConstants_1_1Grid.html',1,'Constants']]],
+  ['constants_3a_3asnake_10',['Snake',['../namespaceConstants_1_1Snake.html',1,'Constants']]],
+  ['constants_3a_3aspeed_11',['Speed',['../namespaceConstants_1_1Speed.html',1,'Constants']]],
+  ['createbody_12',['createBody',['../classGameManager.html#a9227f6b9eefb98536e3427f3f7f9b90c',1,'GameManager']]],
+  ['createfood_13',['createFood',['../classGameManager.html#ab4fbf17467c39b83b3589df386503347',1,'GameManager']]],
+  ['creategameoverbox_14',['createGameOverBox',['../classMainWindow.html#afb676cdb344962e1345bdc77d11f868f',1,'MainWindow']]],
+  ['createhead_15',['createHead',['../classGameManager.html#a67b57e657d9c0e5c8656c6b2693ab62e',1,'GameManager']]],
+  ['createsnake_16',['createSnake',['../classGameManager.html#a2b35b22d04795127317460964effe443',1,'GameManager']]],
+  ['currentdirection_17',['currentDirection',['../classSnake.html#a319563098b5aab4c72938fe10295366d',1,'Snake']]]
 ];

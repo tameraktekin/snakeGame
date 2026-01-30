@@ -1,5 +1,16 @@
 <map id="MainWindow" name="MainWindow">
-<area shape="rect" id="Node000001" title=" " alt="" coords="10,79,117,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,121,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,44,66,79,61,79,61,44"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,256,138,281"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,168,121,193"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,206,84,255,79,256,67,207"/>
+<area shape="rect" id="Node000003" href="$classGameManager.html" title="The brain of the Snake game." alt="" coords="145,168,264,193"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,204,103,258,99,254,176,199"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="121,5,195,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="150,44,143,74,143,89,146,104,167,140,193,166,189,170,163,143,141,106,137,90,138,73,145,43"/>
+<area shape="rect" id="Node000007" href="$classAudioManager.html" title=" " alt="" coords="156,80,272,105"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="178,40,207,78,203,81,173,43"/>
+<area shape="rect" id="Node000005" href="$classFood.html" title="Represents the consumable item that appears on the grid." alt="" coords="306,80,359,105"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="325,120,305,146,283,160,258,170,256,165,280,156,302,142,321,116"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="259,5,407,31"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="335,45,335,80,330,80,330,45"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="210,119,209,130,207,168,202,168,203,129,205,119"/>
 </map>

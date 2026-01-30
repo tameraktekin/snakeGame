@@ -1,5 +1,12 @@
 <map id="GameManager" name="GameManager">
-<area shape="rect" id="Node000001" title="The brain of the Snake game." alt="" coords="5,79,124,104"/>
-<area shape="rect" id="Node000002" title=" " alt="" coords="27,5,102,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,67,79,62,79,62,44"/>
+<area shape="rect" id="Node000001" title="The brain of the Snake game." alt="" coords="26,168,145,193"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,80,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="33,44,24,74,24,89,26,104,48,140,73,166,69,170,43,143,22,106,18,90,19,73,28,42"/>
+<area shape="rect" id="Node000005" href="$classAudioManager.html" title=" " alt="" coords="37,80,153,105"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="61,41,88,78,84,81,57,44"/>
+<area shape="rect" id="Node000003" href="$classFood.html" title="Represents the consumable item that appears on the grid." alt="" coords="187,80,240,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,120,186,146,163,160,139,170,137,165,161,156,182,142,201,116"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="139,5,287,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,45,216,80,211,80,211,45"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="91,119,89,130,88,168,82,168,84,129,86,119"/>
 </map>

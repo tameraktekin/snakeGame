@@ -1,0 +1,21 @@
+<map id="src/food.cpp" name="src/food.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="333,5,434,31"/>
+<area shape="rect" id="Node000002" href="$food_8h.html" title=" " alt="" coords="352,79,415,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="386,31,386,65,381,65,381,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,65,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="352,101,236,122,79,155,78,149,235,117,351,95"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,152,237,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="353,105,213,150,211,145,351,100"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="262,152,331,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="371,106,323,145,320,141,368,102"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="355,152,411,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="386,104,386,138,381,138,381,104"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="435,152,513,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="400,102,450,141,447,145,396,106"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="537,152,688,177"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="416,100,563,145,561,150,414,105"/>
+<area shape="rect" id="Node000009" href="$constants_8h.html" title="Global configuration and magic numbers for the Snake game." alt="" coords="712,152,809,177"/>
+<area shape="poly" id="edge8_Node000002_Node000009" title=" " alt="" coords="415,96,699,149,698,154,414,101"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="727,225,794,251"/>
+<area shape="poly" id="edge9_Node000009_Node000010" title=" " alt="" coords="763,178,763,212,758,212,758,178"/>
+</map>

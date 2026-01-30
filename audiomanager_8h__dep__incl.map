@@ -1,0 +1,17 @@
+<map id="include/audiomanager.h" name="include/audiomanager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="333,5,511,31"/>
+<area shape="rect" id="Node000002" href="$gamemanager_8h.html" title=" " alt="" coords="235,79,414,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="397,41,342,81,339,76,394,37"/>
+<area shape="rect" id="Node000008" href="$audiomanager_8cpp.html" title=" " alt="" coords="438,79,603,104"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="450,36,506,76,503,81,447,41"/>
+<area shape="rect" id="Node000003" href="$mainwindow_8h.html" title=" " alt="" coords="51,152,217,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="282,111,166,154,164,149,280,106"/>
+<area shape="rect" id="Node000006" href="$gamemanager_8cpp.html" title=" " alt="" coords="241,152,408,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="327,118,327,152,322,152,322,118"/>
+<area shape="rect" id="Node000007" href="$testmain_8cpp.html" title=" " alt="" coords="432,152,575,177"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="367,106,475,149,473,154,365,111"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="5,225,111,251"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="114,189,72,227,69,223,110,185"/>
+<area shape="rect" id="Node000005" href="$mainwindow_8cpp.html" title=" " alt="" coords="134,225,289,251"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="158,185,200,223,197,227,155,189"/>
+</map>

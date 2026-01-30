@@ -1,0 +1,11 @@
+<map id="include/audiomanager.h" name="include/audiomanager.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="69,5,248,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,80,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,33,75,74,72,69,139,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="104,79,213,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,31,161,65,156,65,156,31"/>
+<area shape="rect" id="Node000004" href="$constants_8h.html" title="Global configuration and magic numbers for the Snake game." alt="" coords="238,79,335,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="181,28,255,69,252,74,178,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="253,152,320,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="289,104,289,138,284,138,284,104"/>
+</map>
