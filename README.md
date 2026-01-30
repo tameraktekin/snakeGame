@@ -3,10 +3,6 @@
 A classic **Snake game** implemented in **C++ using the Qt framework**.  
 Cleanly structured, responsive, and designed with maintainability in mind — this project is both fun to play and a solid demonstration of modern C++ and Qt development practices.
 
-# 🐍 SnakeGame
-
-A classic Snake game implemented in C++ using the Qt framework.
-
 ![Gameplay demo](assets/gamePlayDemo.gif)
 
 ---
