@@ -19,9 +19,17 @@ jobs:
         
       - name: Run Doxygen
         run: |
+          
           mkdir -p output_docs
-          (cat Doxyfile.in; echo "OUTPUT_DIRECTORY = output_docs") | doxygen -
-        
+          
+          (cat Doxyfile.in; 
+           echo "INPUT = ."; 
+           echo "RECURSIVE = YES"; 
+           echo "OUTPUT_DIRECTORY = output_docs"; 
+           echo "HTML_OUTPUT = html") | doxygen -
+          
+          ls -R output_docs/html
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
