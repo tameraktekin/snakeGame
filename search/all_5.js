@@ -11,5 +11,6 @@ var searchData=
   ['getscore_8',['getScore',['../classGameManager.html#a3dcc07f9ddf2188cb1adc6c51ea1ae24',1,'GameManager']]],
   ['getsnakelength_9',['getSnakeLength',['../classGameManager.html#ad68f790404594e281a83b7e6c960e31e',1,'GameManager']]],
   ['getsnakeposition_10',['getSnakePosition',['../classGameManager.html#a237166d53ebf6ee33dd6b4ee567053bc',1,'GameManager']]],
-  ['grow_11',['grow',['../classSnake.html#a96935ae6b8c55e15cbeb930e2881c5b9',1,'Snake']]]
+  ['grid_11',['Grid',['../namespaceGrid.html',1,'']]],
+  ['grow_12',['grow',['../classSnake.html#a96935ae6b8c55e15cbeb930e2881c5b9',1,'Snake']]]
 ];

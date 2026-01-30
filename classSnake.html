@@ -107,37 +107,49 @@ Collaboration diagram for Snake:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a0553b3ee7a4ee8f9bb041157f6fbd2f8" id="r_a0553b3ee7a4ee8f9bb041157f6fbd2f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#a0553b3ee7a4ee8f9bb041157f6fbd2f8">Snake</a> (<a class="el" href="snake_8h.html#acf0ce63e34327e5bc336f9fe3d2d47a2">BodyType</a> type, QGraphicsItem *parent=nullptr)</td></tr>
+<tr class="memdesc:a0553b3ee7a4ee8f9bb041157f6fbd2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> segment.  <br /></td></tr>
 <tr class="separator:a0553b3ee7a4ee8f9bb041157f6fbd2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ace7f331a79a3489a534cbc68396bb" id="r_af4ace7f331a79a3489a534cbc68396bb"><td class="memItemLeft" align="right" valign="top">QPointF&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#af4ace7f331a79a3489a534cbc68396bb">move</a> (const QPointF &amp;previousPosition)</td></tr>
+<tr class="memdesc:af4ace7f331a79a3489a534cbc68396bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the snake segment based on its current direction. It moves the segment to the position of the previous segment and returns that previous position. Movement occurs in a snake-like fashion.  <br /></td></tr>
 <tr class="separator:af4ace7f331a79a3489a534cbc68396bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeaad0b82eecaeef753c8cf4e6407695" id="r_abeaad0b82eecaeef753c8cf4e6407695"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#abeaad0b82eecaeef753c8cf4e6407695">changeDirection</a> (<a class="el" href="snake_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a> newDirection)</td></tr>
+<tr class="memdesc:abeaad0b82eecaeef753c8cf4e6407695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the current direction of the snake segment.  <br /></td></tr>
 <tr class="separator:abeaad0b82eecaeef753c8cf4e6407695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96935ae6b8c55e15cbeb930e2881c5b9" id="r_a96935ae6b8c55e15cbeb930e2881c5b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSnake.html">Snake</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#a96935ae6b8c55e15cbeb930e2881c5b9">grow</a> ()</td></tr>
+<tr class="memdesc:a96935ae6b8c55e15cbeb930e2881c5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Grows the snake by adding a new body segment.  <br /></td></tr>
 <tr class="separator:a96935ae6b8c55e15cbeb930e2881c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adff787257f39eb7d2aa24fd41c659871" id="r_adff787257f39eb7d2aa24fd41c659871"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#adff787257f39eb7d2aa24fd41c659871">checkCollision</a> (QList&lt; QGraphicsItem * &gt; &amp;items) const</td></tr>
+<tr class="memdesc:adff787257f39eb7d2aa24fd41c659871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks for collision with body parts in the scene.  <br /></td></tr>
 <tr class="separator:adff787257f39eb7d2aa24fd41c659871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaae7f422bd57451d27543197bf17324b" id="r_aaae7f422bd57451d27543197bf17324b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snake_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#aaae7f422bd57451d27543197bf17324b">getDirection</a> () const</td></tr>
+<tr class="memdesc:aaae7f422bd57451d27543197bf17324b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current direction of the snake segment.  <br /></td></tr>
 <tr class="separator:aaae7f422bd57451d27543197bf17324b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa4f01d8d7cc77d8eae663c2d300f725" id="r_afa4f01d8d7cc77d8eae663c2d300f725"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snake_8h.html#acf0ce63e34327e5bc336f9fe3d2d47a2">BodyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#afa4f01d8d7cc77d8eae663c2d300f725">getBodyType</a> () const</td></tr>
+<tr class="memdesc:afa4f01d8d7cc77d8eae663c2d300f725"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the body type of the snake segment.  <br /></td></tr>
 <tr class="separator:afa4f01d8d7cc77d8eae663c2d300f725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a183d502a82163fc224e0deaf5db8a3e9" id="r_a183d502a82163fc224e0deaf5db8a3e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#a183d502a82163fc224e0deaf5db8a3e9">paint</a> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
+<tr class="memdesc:a183d502a82163fc224e0deaf5db8a3e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the snake segment.  <br /></td></tr>
 <tr class="separator:a183d502a82163fc224e0deaf5db8a3e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a79befb04cb6d6229e8d3210338895a24" id="r_a79befb04cb6d6229e8d3210338895a24"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#a79befb04cb6d6229e8d3210338895a24">drawHead</a> (QPainter *painter)</td></tr>
+<tr class="memdesc:a79befb04cb6d6229e8d3210338895a24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the head of the snake.  <br /></td></tr>
 <tr class="separator:a79befb04cb6d6229e8d3210338895a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e90a1e7b5e8b7c191ead8a026b44ca" id="r_aa5e90a1e7b5e8b7c191ead8a026b44ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#aa5e90a1e7b5e8b7c191ead8a026b44ca">drawBody</a> (QPainter *painter)</td></tr>
+<tr class="memdesc:aa5e90a1e7b5e8b7c191ead8a026b44ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the body of the snake.  <br /></td></tr>
 <tr class="separator:aa5e90a1e7b5e8b7c191ead8a026b44ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a319563098b5aab4c72938fe10295366d" id="r_a319563098b5aab4c72938fe10295366d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snake_8h.html#a224b9163917ac32fc95a60d8c1eec3aa">Direction</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#a319563098b5aab4c72938fe10295366d">currentDirection</a></td></tr>
+<tr class="memdesc:a319563098b5aab4c72938fe10295366d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current movement direction of the snake segment.  <br /></td></tr>
 <tr class="separator:a319563098b5aab4c72938fe10295366d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a576741cb992b3d3a9899854069d09c25" id="r_a576741cb992b3d3a9899854069d09c25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="snake_8h.html#acf0ce63e34327e5bc336f9fe3d2d47a2">BodyType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSnake.html#a576741cb992b3d3a9899854069d09c25">m_type</a></td></tr>
+<tr class="memdesc:a576741cb992b3d3a9899854069d09c25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the snake segment (HEAD or BODY).  <br /></td></tr>
 <tr class="separator:a576741cb992b3d3a9899854069d09c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -172,6 +184,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor for <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>The type of the snake segment (HEAD or BODY). </td></tr>
+    <tr><td class="paramname">parent</td><td>The parent QGraphicsItem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -191,6 +212,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Changes the current direction of the snake segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newDirection</td><td>The new direction to set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="adff787257f39eb7d2aa24fd41c659871" name="adff787257f39eb7d2aa24fd41c659871"></a>
@@ -208,6 +237,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Checks for collision with body parts in the scene. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">items</td><td>List of QGraphicsItems to check for collision. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if a collision with a body part is detected, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -235,6 +273,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the body of the snake. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>The QPainter object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a79befb04cb6d6229e8d3210338895a24" name="a79befb04cb6d6229e8d3210338895a24"></a>
@@ -261,6 +307,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Draws the head of the snake. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>The QPainter object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afa4f01d8d7cc77d8eae663c2d300f725" name="afa4f01d8d7cc77d8eae663c2d300f725"></a>
@@ -285,6 +339,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Gets the body type of the snake segment. </p>
+<dl class="section return"><dt>Returns</dt><dd>The body type (HEAD or BODY). </dd></dl>
 
 </div>
 </div>
@@ -311,6 +368,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the current direction of the snake segment. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current direction. </dd></dl>
+
 </div>
 </div>
 <a id="a96935ae6b8c55e15cbeb930e2881c5b9" name="a96935ae6b8c55e15cbeb930e2881c5b9"></a>
@@ -327,6 +387,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Grows the snake by adding a new body segment. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> body segment. </dd></dl>
 
 </div>
 </div>
@@ -345,6 +408,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Moves the snake segment based on its current direction. It moves the segment to the position of the previous segment and returns that previous position. Movement occurs in a snake-like fashion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">previousPosition</td><td>The position of the previous segment. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The previous position before movement. </dd></dl>
 
 </div>
 </div>
@@ -388,6 +460,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Paints the snake segment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>The QPainter object. </td></tr>
+    <tr><td class="paramname">option</td><td>Style options for the graphics item. </td></tr>
+    <tr><td class="paramname">widget</td><td>The widget being painted on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -411,6 +493,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Current movement direction of the snake segment. </p>
+
 </div>
 </div>
 <a id="a576741cb992b3d3a9899854069d09c25" name="a576741cb992b3d3a9899854069d09c25"></a>
@@ -432,6 +516,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Type of the snake segment (HEAD or BODY). </p>
 
 </div>
 </div>

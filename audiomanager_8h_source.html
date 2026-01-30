@@ -88,35 +88,38 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QSoundEffect&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="constants_8h.html">constants.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="classAudioManager.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="classAudioManager.html">AudioManager</a> : <span class="keyword">public</span> QObject</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    Q_OBJECT</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <a class="code hl_class" href="classAudioManager.html">AudioManager</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <a class="code hl_function" href="classAudioManager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a>();</div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="classAudioManager.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="classAudioManager.html">AudioManager</a> : <span class="keyword">public</span> QObject</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    Q_OBJECT</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span> slots:</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classAudioManager.html#a601f5c5256c8f44133021eb1b256147c">playEatSound</a>();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classAudioManager.html#ac9657e3182825663ee30efd8ab791d47">playGameOverSound</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">   21</a></span>    QSoundEffect *<a class="code hl_variable" href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">soundEffectPlayerEat</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">   22</a></span>    QSoundEffect *<a class="code hl_variable" href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">soundEffectGameOver</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAudioManager.html#a6be5e5514d5c3c20d0ff60d39d0de79e">initSoundEffects</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <a class="code hl_class" href="classAudioManager.html">AudioManager</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="classAudioManager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">public</span> slots:</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classAudioManager.html#a601f5c5256c8f44133021eb1b256147c">playEatSound</a>();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_slot" href="classAudioManager.html#ac9657e3182825663ee30efd8ab791d47">playGameOverSound</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">   43</a></span>    QSoundEffect *<a class="code hl_variable" href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">soundEffectPlayerEat</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">   48</a></span>    QSoundEffect *<a class="code hl_variable" href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">soundEffectGameOver</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classAudioManager.html#a6be5e5514d5c3c20d0ff60d39d0de79e">initSoundEffects</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">// AUDIOMANAGER_H</span></div>
-<div class="ttc" id="aclassAudioManager_html"><div class="ttname"><a href="classAudioManager.html">AudioManager</a></div><div class="ttdef"><b>Definition</b> audiomanager.h:9</div></div>
-<div class="ttc" id="aclassAudioManager_html_a4d9e7c735b065df8b2971d850f63cb8c"><div class="ttname"><a href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">AudioManager::soundEffectGameOver</a></div><div class="ttdeci">QSoundEffect * soundEffectGameOver</div><div class="ttdef"><b>Definition</b> audiomanager.h:22</div></div>
-<div class="ttc" id="aclassAudioManager_html_a601f5c5256c8f44133021eb1b256147c"><div class="ttname"><a href="classAudioManager.html#a601f5c5256c8f44133021eb1b256147c">AudioManager::playEatSound</a></div><div class="ttdeci">void playEatSound()</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:23</div></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#endif </span><span class="comment">// AUDIOMANAGER_H</span></div>
+<div class="ttc" id="aclassAudioManager_html"><div class="ttname"><a href="classAudioManager.html">AudioManager</a></div><div class="ttdoc">Manages audio playback for the Snake game.</div><div class="ttdef"><b>Definition</b> audiomanager.h:13</div></div>
+<div class="ttc" id="aclassAudioManager_html_a4d9e7c735b065df8b2971d850f63cb8c"><div class="ttname"><a href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">AudioManager::soundEffectGameOver</a></div><div class="ttdeci">QSoundEffect * soundEffectGameOver</div><div class="ttdoc">Sound effect for game over.</div><div class="ttdef"><b>Definition</b> audiomanager.h:48</div></div>
+<div class="ttc" id="aclassAudioManager_html_a601f5c5256c8f44133021eb1b256147c"><div class="ttname"><a href="classAudioManager.html#a601f5c5256c8f44133021eb1b256147c">AudioManager::playEatSound</a></div><div class="ttdeci">void playEatSound()</div><div class="ttdoc">Plays the sound effect for eating food.</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:23</div></div>
 <div class="ttc" id="aclassAudioManager_html_a6be5e5514d5c3c20d0ff60d39d0de79e"><div class="ttname"><a href="classAudioManager.html#a6be5e5514d5c3c20d0ff60d39d0de79e">AudioManager::initSoundEffects</a></div><div class="ttdeci">void initSoundEffects()</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:13</div></div>
-<div class="ttc" id="aclassAudioManager_html_aa81405de13ac6abad5b27f3b254d666d"><div class="ttname"><a href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">AudioManager::soundEffectPlayerEat</a></div><div class="ttdeci">QSoundEffect * soundEffectPlayerEat</div><div class="ttdef"><b>Definition</b> audiomanager.h:21</div></div>
-<div class="ttc" id="aclassAudioManager_html_ac9657e3182825663ee30efd8ab791d47"><div class="ttname"><a href="classAudioManager.html#ac9657e3182825663ee30efd8ab791d47">AudioManager::playGameOverSound</a></div><div class="ttdeci">void playGameOverSound()</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:29</div></div>
-<div class="ttc" id="aclassAudioManager_html_ad94dc46723c6d7cf8c81fc3772a842aa"><div class="ttname"><a href="classAudioManager.html#ad94dc46723c6d7cf8c81fc3772a842aa">AudioManager::~AudioManager</a></div><div class="ttdeci">~AudioManager()</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:8</div></div>
+<div class="ttc" id="aclassAudioManager_html_aa81405de13ac6abad5b27f3b254d666d"><div class="ttname"><a href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">AudioManager::soundEffectPlayerEat</a></div><div class="ttdeci">QSoundEffect * soundEffectPlayerEat</div><div class="ttdoc">Sound effect player for eating food.</div><div class="ttdef"><b>Definition</b> audiomanager.h:43</div></div>
+<div class="ttc" id="aclassAudioManager_html_ac9657e3182825663ee30efd8ab791d47"><div class="ttname"><a href="classAudioManager.html#ac9657e3182825663ee30efd8ab791d47">AudioManager::playGameOverSound</a></div><div class="ttdeci">void playGameOverSound()</div><div class="ttdoc">Plays the sound effect for game over.</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:29</div></div>
+<div class="ttc" id="aclassAudioManager_html_ad94dc46723c6d7cf8c81fc3772a842aa"><div class="ttname"><a href="classAudioManager.html#ad94dc46723c6d7cf8c81fc3772a842aa">AudioManager::~AudioManager</a></div><div class="ttdeci">~AudioManager()</div><div class="ttdoc">Destructor to clean up resources.</div><div class="ttdef"><b>Definition</b> audiomanager.cpp:8</div></div>
 <div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div><div class="ttdoc">Global configuration and magic numbers for the Snake game.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

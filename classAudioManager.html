@@ -79,13 +79,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Manages audio playback for the <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> game.  
+ <a href="classAudioManager.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="audiomanager_8h_source.html">audiomanager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AudioManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAudioManager__inherit__graph.png" border="0" usemap="#aAudioManager_inherit__map" alt="Inheritance graph"/></div>
 <map name="aAudioManager_inherit__map" id="aAudioManager_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,79,121,104"/>
+<area shape="rect" title="Manages audio playback for the Snake game." alt="" coords="5,79,121,104"/>
 <area shape="rect" title=" " alt="" coords="26,5,101,31"/>
 <area shape="poly" title=" " alt="" coords="66,44,66,79,61,79,61,44"/>
 </map>
@@ -95,7 +98,7 @@ Collaboration diagram for AudioManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classAudioManager__coll__graph.png" border="0" usemap="#aAudioManager_coll__map" alt="Collaboration graph"/></div>
 <map name="aAudioManager_coll__map" id="aAudioManager_coll__map">
-<area shape="rect" title=" " alt="" coords="5,79,121,104"/>
+<area shape="rect" title="Manages audio playback for the Snake game." alt="" coords="5,79,121,104"/>
 <area shape="rect" title=" " alt="" coords="26,5,101,31"/>
 <area shape="poly" title=" " alt="" coords="66,44,66,79,61,79,61,44"/>
 </map>
@@ -104,15 +107,19 @@ Collaboration diagram for AudioManager:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a601f5c5256c8f44133021eb1b256147c" id="r_a601f5c5256c8f44133021eb1b256147c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioManager.html#a601f5c5256c8f44133021eb1b256147c">playEatSound</a> ()</td></tr>
+<tr class="memdesc:a601f5c5256c8f44133021eb1b256147c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound effect for eating food.  <br /></td></tr>
 <tr class="separator:a601f5c5256c8f44133021eb1b256147c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9657e3182825663ee30efd8ab791d47" id="r_ac9657e3182825663ee30efd8ab791d47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioManager.html#ac9657e3182825663ee30efd8ab791d47">playGameOverSound</a> ()</td></tr>
+<tr class="memdesc:ac9657e3182825663ee30efd8ab791d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Plays the sound effect for game over.  <br /></td></tr>
 <tr class="separator:ac9657e3182825663ee30efd8ab791d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2ad9c3998482ad52bc74696844cb2e7" id="r_ab2ad9c3998482ad52bc74696844cb2e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioManager.html#ab2ad9c3998482ad52bc74696844cb2e7">AudioManager</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:ab2ad9c3998482ad52bc74696844cb2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the <a class="el" href="classAudioManager.html" title="Manages audio playback for the Snake game.">AudioManager</a> and initializes sound effects.  <br /></td></tr>
 <tr class="separator:ab2ad9c3998482ad52bc74696844cb2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad94dc46723c6d7cf8c81fc3772a842aa" id="r_ad94dc46723c6d7cf8c81fc3772a842aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioManager.html#ad94dc46723c6d7cf8c81fc3772a842aa">~AudioManager</a> ()</td></tr>
+<tr class="memdesc:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor to clean up resources.  <br /></td></tr>
 <tr class="separator:ad94dc46723c6d7cf8c81fc3772a842aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
@@ -123,11 +130,15 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aa81405de13ac6abad5b27f3b254d666d" id="r_aa81405de13ac6abad5b27f3b254d666d"><td class="memItemLeft" align="right" valign="top">QSoundEffect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d">soundEffectPlayerEat</a></td></tr>
+<tr class="memdesc:aa81405de13ac6abad5b27f3b254d666d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect player for eating food.  <br /></td></tr>
 <tr class="separator:aa81405de13ac6abad5b27f3b254d666d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d9e7c735b065df8b2971d850f63cb8c" id="r_a4d9e7c735b065df8b2971d850f63cb8c"><td class="memItemLeft" align="right" valign="top">QSoundEffect *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c">soundEffectGameOver</a></td></tr>
+<tr class="memdesc:a4d9e7c735b065df8b2971d850f63cb8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect for game over.  <br /></td></tr>
 <tr class="separator:a4d9e7c735b065df8b2971d850f63cb8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manages audio playback for the <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> game. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab2ad9c3998482ad52bc74696844cb2e7" name="ab2ad9c3998482ad52bc74696844cb2e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2ad9c3998482ad52bc74696844cb2e7">&#9670;&#160;</a></span>AudioManager()</h2>
 
@@ -143,6 +154,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructs the <a class="el" href="classAudioManager.html" title="Manages audio playback for the Snake game.">AudioManager</a> and initializes sound effects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Pointer to the parent QObject (default is nullptr). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -160,6 +179,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor to clean up resources. </p>
 
 </div>
 </div>
@@ -212,6 +233,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Plays the sound effect for eating food. </p>
+
 </div>
 </div>
 <a id="ac9657e3182825663ee30efd8ab791d47" name="ac9657e3182825663ee30efd8ab791d47"></a>
@@ -237,6 +260,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Plays the sound effect for game over. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -260,6 +285,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Sound effect for game over. </p>
+
 </div>
 </div>
 <a id="aa81405de13ac6abad5b27f3b254d666d" name="aa81405de13ac6abad5b27f3b254d666d"></a>
@@ -281,6 +308,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Sound effect player for eating food. </p>
 
 </div>
 </div>

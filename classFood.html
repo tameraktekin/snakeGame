@@ -104,18 +104,23 @@ Collaboration diagram for Food:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1032bba3936e6170d1ab8697e44ff7d4" id="r_a1032bba3936e6170d1ab8697e44ff7d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFood.html#a1032bba3936e6170d1ab8697e44ff7d4">Food</a> (int <a class="el" href="classFood.html#a5baa01f843c476bfce1e4bdfd22bb7d4">maxWidth</a>, int <a class="el" href="classFood.html#acb0166dead021bfc7342094d37ce6ae5">maxHeight</a>, QGraphicsItem *parent=nullptr)</td></tr>
+<tr class="memitem:a1032bba3936e6170d1ab8697e44ff7d4" id="r_a1032bba3936e6170d1ab8697e44ff7d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFood.html#a1032bba3936e6170d1ab8697e44ff7d4">Food</a> (int maxWidth, int maxHeight, QGraphicsItem *parent=nullptr)</td></tr>
+<tr class="memdesc:a1032bba3936e6170d1ab8697e44ff7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the <a class="el" href="classFood.html" title="Represents the consumable item that appears on the grid.">Food</a> class.  <br /></td></tr>
 <tr class="separator:a1032bba3936e6170d1ab8697e44ff7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92928e2de6765094d09ad21920f09a62" id="r_a92928e2de6765094d09ad21920f09a62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFood.html#a92928e2de6765094d09ad21920f09a62">generateNewPosition</a> ()</td></tr>
+<tr class="memdesc:a92928e2de6765094d09ad21920f09a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new random position for the food item.  <br /></td></tr>
 <tr class="separator:a92928e2de6765094d09ad21920f09a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ad2ebc1f73a6e1295fd23c9c3976ca1" id="r_a9ad2ebc1f73a6e1295fd23c9c3976ca1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFood.html#a9ad2ebc1f73a6e1295fd23c9c3976ca1">paint</a> (QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override</td></tr>
+<tr class="memdesc:a9ad2ebc1f73a6e1295fd23c9c3976ca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Paints the food item.  <br /></td></tr>
 <tr class="separator:a9ad2ebc1f73a6e1295fd23c9c3976ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a5baa01f843c476bfce1e4bdfd22bb7d4" id="r_a5baa01f843c476bfce1e4bdfd22bb7d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFood.html#a5baa01f843c476bfce1e4bdfd22bb7d4">maxWidth</a></td></tr>
+<tr class="memdesc:a5baa01f843c476bfce1e4bdfd22bb7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum width for positioning the food item.  <br /></td></tr>
 <tr class="separator:a5baa01f843c476bfce1e4bdfd22bb7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb0166dead021bfc7342094d37ce6ae5" id="r_acb0166dead021bfc7342094d37ce6ae5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFood.html#acb0166dead021bfc7342094d37ce6ae5">maxHeight</a></td></tr>
+<tr class="memdesc:acb0166dead021bfc7342094d37ce6ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum height for positioning the food item.  <br /></td></tr>
 <tr class="separator:acb0166dead021bfc7342094d37ce6ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -156,6 +161,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructor for the <a class="el" href="classFood.html" title="Represents the consumable item that appears on the grid.">Food</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">maxWidth</td><td>Maximum width of the game area. </td></tr>
+    <tr><td class="paramname">maxHeight</td><td>Maximum height of the game area. </td></tr>
+    <tr><td class="paramname">parent</td><td>Optional parent QGraphicsItem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -173,6 +188,11 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Generates a new random position for the food item. </p>
+<ul>
+<li>Ensures the position is in the scene. </li>
+</ul>
 
 </div>
 </div>
@@ -216,6 +236,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Paints the food item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">painter</td><td>QPainter object used for drawing. </td></tr>
+    <tr><td class="paramname">option</td><td>Style options for the graphics item. </td></tr>
+    <tr><td class="paramname">widget</td><td>Optional widget parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -239,6 +269,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Maximum height for positioning the food item. </p>
+
 </div>
 </div>
 <a id="a5baa01f843c476bfce1e4bdfd22bb7d4" name="a5baa01f843c476bfce1e4bdfd22bb7d4"></a>
@@ -260,6 +292,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Maximum width for positioning the food item. </p>
 
 </div>
 </div>
