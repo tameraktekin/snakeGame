@@ -12,10 +12,14 @@ var searchData=
   ['constants_3a_3agrid_9',['Grid',['../namespaceConstants_1_1Grid.html',1,'Constants']]],
   ['constants_3a_3asnake_10',['Snake',['../namespaceConstants_1_1Snake.html',1,'Constants']]],
   ['constants_3a_3aspeed_11',['Speed',['../namespaceConstants_1_1Speed.html',1,'Constants']]],
-  ['createbody_12',['createBody',['../classGameManager.html#a9227f6b9eefb98536e3427f3f7f9b90c',1,'GameManager']]],
-  ['createfood_13',['createFood',['../classGameManager.html#ab4fbf17467c39b83b3589df386503347',1,'GameManager']]],
-  ['creategameoverbox_14',['createGameOverBox',['../classMainWindow.html#afb676cdb344962e1345bdc77d11f868f',1,'MainWindow']]],
-  ['createhead_15',['createHead',['../classGameManager.html#a67b57e657d9c0e5c8656c6b2693ab62e',1,'GameManager']]],
-  ['createsnake_16',['createSnake',['../classGameManager.html#a2b35b22d04795127317460964effe443',1,'GameManager']]],
-  ['currentdirection_17',['currentDirection',['../classSnake.html#a319563098b5aab4c72938fe10295366d',1,'Snake']]]
+  ['contents_12',['📌 Table of Contents',['../md_README.html#autotoc_md3',1,'']]],
+  ['contributing_13',['🤝 Contributing',['../md_README.html#autotoc_md30',1,'']]],
+  ['controls_14',['controls',['../md_README.html#autotoc_md15',1,'🎮 Controls'],['../md_README.html#autotoc_md13',1,'🎮 Gameplay &amp; Controls']]],
+  ['createbody_15',['createBody',['../classGameManager.html#a9227f6b9eefb98536e3427f3f7f9b90c',1,'GameManager']]],
+  ['createfood_16',['createFood',['../classGameManager.html#ab4fbf17467c39b83b3589df386503347',1,'GameManager']]],
+  ['creategameoverbox_17',['createGameOverBox',['../classMainWindow.html#afb676cdb344962e1345bdc77d11f868f',1,'MainWindow']]],
+  ['createhead_18',['createHead',['../classGameManager.html#a67b57e657d9c0e5c8656c6b2693ab62e',1,'GameManager']]],
+  ['createsnake_19',['createSnake',['../classGameManager.html#a2b35b22d04795127317460964effe443',1,'GameManager']]],
+  ['currentdirection_20',['currentDirection',['../classSnake.html#a319563098b5aab4c72938fe10295366d',1,'Snake']]],
+  ['customization_20ideas_21',['💡 Customization Ideas',['../md_README.html#autotoc_md28',1,'']]]
 ];

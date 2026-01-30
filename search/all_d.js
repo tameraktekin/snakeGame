@@ -1,28 +1,7 @@
 var searchData=
 [
-  ['scene_0',['scene',['../classGameManager.html#ad3eeb5c6266756e2c2a8661b1e14cab6',1,'GameManager::scene'],['../classMainWindow.html#a51ac2b126495216832501cea3929c6f6',1,'MainWindow::scene']]],
-  ['score_1',['score',['../classGameManager.html#aceb9f59354267d31fc6dfb023a695854',1,'GameManager']]],
-  ['score_5finit_5fmilestone_2',['SCORE_INIT_MILESTONE',['../namespaceConstants_1_1Speed.html#a40b43c7a9685069c459a3d76516f8eea',1,'Constants::Speed']]],
-  ['score_5fmilestone_5fmultiplier_3',['SCORE_MILESTONE_MULTIPLIER',['../namespaceConstants_1_1Speed.html#a328aaf04535219524d82c821506a59ee',1,'Constants::Speed']]],
-  ['score_5fper_5ffood_4',['SCORE_PER_FOOD',['../namespaceConstants.html#ac86a90a00c330410fdc14ef864941c63',1,'Constants']]],
-  ['scorechanged_5',['scoreChanged',['../classGameManager.html#aa5a84896aed7ebcdc9aa1e5491089cbf',1,'GameManager']]],
-  ['scoremilestone_6',['scoreMilestone',['../classGameManager.html#acc21de7731e6857d30c272c27f6fc614',1,'GameManager']]],
-  ['setupaudiomanager_7',['setupAudioManager',['../classGameManager.html#a512e30488561a3f88abcb1131feedaf6',1,'GameManager']]],
-  ['setupgame_8',['setupGame',['../classGameManager.html#a44ae324f1eae39de08075dfc91c2b856',1,'GameManager']]],
-  ['setupgamemanager_9',['setupGameManager',['../classMainWindow.html#ac452412927b94341d1494a55a446cc0c',1,'MainWindow']]],
-  ['setupscene_10',['setupScene',['../classMainWindow.html#aef1853fcce800089839a9c4a06f67107',1,'MainWindow']]],
-  ['setupspeedhandling_11',['setupSpeedHandling',['../classGameManager.html#abe2f4e1605574f46318e8a0257537138',1,'GameManager']]],
-  ['setuptimer_12',['setupTimer',['../classGameManager.html#ae38c9fe2dd2931c77fb47b3a5297985f',1,'GameManager']]],
-  ['size_13',['SIZE',['../namespaceConstants_1_1Food.html#a7f77fdedaa160bfa005a45d3194014ee',1,'Constants::Food']]],
-  ['snake_14',['snake',['../classSnake.html#a0553b3ee7a4ee8f9bb041157f6fbd2f8',1,'Snake::Snake()'],['../classGameManager.html#ab6c9b410bfc0a601c87577d629c5243c',1,'GameManager::snake'],['../namespaceSnake.html',1,'Snake'],['../classSnake.html',1,'Snake']]],
-  ['snake_2ecpp_15',['snake.cpp',['../snake_8cpp.html',1,'']]],
-  ['snake_2eh_16',['snake.h',['../snake_8h.html',1,'']]],
-  ['snakegame_17',['snakeGame',['../md_README.html',1,'']]],
-  ['snaketest_18',['SnakeTest',['../classSnakeTest.html',1,'']]],
-  ['sound_5feffect_5feat_19',['SOUND_EFFECT_EAT',['../namespaceConstants_1_1Audio.html#a52ac8cf4c3e2cc22e20e05fc4c6656a2',1,'Constants::Audio']]],
-  ['sound_5feffect_5fgame_5fover_20',['SOUND_EFFECT_GAME_OVER',['../namespaceConstants_1_1Audio.html#a2dc9e7a04283d2e19f34ab744b0044f5',1,'Constants::Audio']]],
-  ['soundeffectgameover_21',['soundEffectGameOver',['../classAudioManager.html#a4d9e7c735b065df8b2971d850f63cb8c',1,'AudioManager']]],
-  ['soundeffectplayereat_22',['soundEffectPlayerEat',['../classAudioManager.html#aa81405de13ac6abad5b27f3b254d666d',1,'AudioManager']]],
-  ['speed_23',['Speed',['../namespaceSpeed.html',1,'']]],
-  ['speed_5fincrement_24',['SPEED_INCREMENT',['../namespaceConstants_1_1Speed.html#aa3f282e0b9bc23000b9ee2a459bcd747',1,'Constants::Speed']]]
+  ['readme_2emd_0',['README.md',['../README_8md.html',1,'']]],
+  ['resetgame_1',['resetGame',['../classMainWindow.html#a88572c2fcc2b7e931fc28af5593cc4b4',1,'MainWindow']]],
+  ['right_2',['RIGHT',['../snake_8h.html#a224b9163917ac32fc95a60d8c1eec3aaa21507b40c80068eda19865706fdc2403',1,'snake.h']]],
+  ['running_20the_20game_3',['▶️ Running the Game',['../md_README.html#autotoc_md22',1,'']]]
 ];

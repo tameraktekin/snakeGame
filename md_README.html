@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Snake Game: snakeGame</title>
+<title>Snake Game: 🐍 SnakeGame</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,10 +69,239 @@ $(function() {
 
 </div><!-- top -->
 <div><div class="header">
-  <div class="headertitle"><div class="title">snakeGame</div></div>
+  <div class="headertitle"><div class="title">🐍 SnakeGame</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a><a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> game implementation with C++ and Qt. </p>
+<div class="textblock"><p><a class="anchor" id="autotoc_md0"></a> A classic <b><a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> game</b> implemented in <b>C++ using the Qt framework</b>. <br  />
+ Cleanly structured, responsive, and designed with maintainability in mind — this project is both fun to play and a solid demonstration of modern C++ and Qt development practices.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+🐍 SnakeGame</h1>
+<p>A classic <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> game implemented in C++ using the Qt framework.</p>
+<p><img src="assets/gamePlayDemo.gif" alt="Gameplay demo" class="inline"/></p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md3"></a>
+📌 Table of Contents</h2>
+<ul>
+<li>📖 About <br  />
+</li>
+<li>🚀 Features <br  />
+</li>
+<li>🧠 Architecture &amp; Design <br  />
+</li>
+<li>🛠️ Technologies Used <br  />
+</li>
+<li>🎮 Gameplay &amp; Controls <br  />
+</li>
+<li>💻 Getting Started <br  />
+<ul>
+<li>🧾 Prerequisites <br  />
+</li>
+<li>📥 Build &amp; Installation <br  />
+</li>
+<li>▶️ Running the Game <br  />
+</li>
+</ul>
+</li>
+<li>📂 Project Structure <br  />
+</li>
+<li>🧪 Testing <br  />
+</li>
+<li>💡 Customization Ideas <br  />
+</li>
+<li>🤝 Contributing <br  />
+</li>
+<li>⚠️ License <br  />
+</li>
+<li>📬 Acknowledgements <br  />
+</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md5"></a>
+📖 About</h2>
+<p><b>SnakeGame</b> is a desktop implementation of the timeless <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> arcade game, written in <b>C++ with Qt</b>. <br  />
+ The objective is simple: control the snake, eat food to grow longer, and avoid collisions with your own body.</p>
+<p>Beyond gameplay, the project serves as a clean example of:</p>
+<ul>
+<li>Event-driven programming with Qt <br  />
+</li>
+<li>Object-oriented design in C++ <br  />
+</li>
+<li>Real-time game logic using timers <br  />
+</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md7"></a>
+🚀 Features</h2>
+<ul>
+<li>Classic <a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> gameplay <br  />
+</li>
+<li>Smooth, timer-based movement <br  />
+</li>
+<li>Collision detection <br  />
+</li>
+<li><a class="el" href="classSnake.html" title="Represents a single segment of the snake (Head or Body).">Snake</a> growth mechanics <br  />
+</li>
+<li>Score tracking <br  />
+</li>
+<li>Sound effects for gameplay feedback <br  />
+</li>
+<li>Modular, readable code structure <br  />
+</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md9"></a>
+🧠 Architecture &amp; Design</h2>
+<p>The game is structured to keep logic, rendering, and input handling clearly separated.</p>
+<p>Key design aspects include:</p>
+<ul>
+<li>Qt timers for the game loop and movement updates <br  />
+</li>
+<li>Signals &amp; slots for input handling and state changes <br  />
+</li>
+<li>Encapsulated game objects (snake, board, food, etc.) <br  />
+</li>
+<li>Extensible structure, making it easy to add new features or tweak gameplay behavior <br  />
+</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md11"></a>
+🛠️ Technologies Used</h2>
+<ul>
+<li>C++ (C++17 or newer)</li>
+<li>Qt 6</li>
+<li>Qt Widgets</li>
+<li>CMake</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md13"></a>
+🎮 Gameplay &amp; Controls</h2>
+<h3><a class="anchor" id="autotoc_md14"></a>
+🎯 Objective</h3>
+<p>Eat food to grow longer and increase your score, while avoiding:</p>
+<ul>
+<li>The game boundaries <br  />
+</li>
+<li>The snake’s own body <br  />
+</li>
+</ul>
+<p>The game ends upon collision.</p>
+<h3><a class="anchor" id="autotoc_md15"></a>
+🎮 Controls</h3>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Action   </th><th class="markdownTableHeadNone">Key    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Move Up   </td><td class="markdownTableBodyNone">↑ / W    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Move Down   </td><td class="markdownTableBodyNone">↓ / S    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Move Left   </td><td class="markdownTableBodyNone">← / A    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Move Right   </td><td class="markdownTableBodyNone">→ / D   </td></tr>
+</table>
+<hr  />
+<h2><a class="anchor" id="autotoc_md17"></a>
+💻 Getting Started</h2>
+<h3><a class="anchor" id="autotoc_md18"></a>
+🧾 Prerequisites</h3>
+<p>Make sure the following are installed:</p>
+<ul>
+<li>Qt (version 6)</li>
+<li>A C++17-compatible compiler (GCC / Clang / MSVC)</li>
+<li>CMake 3.16 or newer</li>
+</ul>
+<hr  />
+<h3><a class="anchor" id="autotoc_md20"></a>
+📥 Build &amp; Installation</h3>
+<ol type="1">
+<li>Clone the repository: <div class="fragment"><div class="line">git clone https://github.com/tameraktekin/snakeGame.git</div>
+<div class="line">cd snakeGame</div>
+</div><!-- fragment --></li>
+<li>Create and enter a build directory: <div class="fragment"><div class="line">mkdir build</div>
+<div class="line">cd build</div>
+</div><!-- fragment --></li>
+<li>Configure the project with CMake: <div class="fragment"><div class="line">cmake ..</div>
+</div><!-- fragment --></li>
+<li>Build the project: <div class="fragment"><div class="line">cmake --build .</div>
+</div><!-- fragment --></li>
+</ol>
+<hr  />
+<h3><a class="anchor" id="autotoc_md22"></a>
+▶️ Running the Game</h3>
+<p>From inside the <code>build</code> directory:</p>
+<div class="fragment"><div class="line">./SnakeGame</div>
+</div><!-- fragment --><p>On Windows:</p>
+<div class="fragment"><div class="line">SnakeGame.exe</div>
+</div><!-- fragment --><hr  />
+<h2><a class="anchor" id="autotoc_md24"></a>
+📂 Project Structure</h2>
+<div class="fragment"><div class="line">snakeGame/</div>
+<div class="line">├── assets/               # Sound effects</div>
+<div class="line">├── include/              # Header files</div>
+<div class="line">│   ├── Snake.h</div>
+<div class="line">│   ├── Board.h</div>
+<div class="line">│   └── ...</div>
+<div class="line">├── src/                  # Source files</div>
+<div class="line">│   ├── main.cpp</div>
+<div class="line">│   ├── Snake.cpp</div>
+<div class="line">│   └── ...</div>
+<div class="line">├── tests/                # Unit test sources</div>
+<div class="line">├── CMakeLists.txt        # Build configuration</div>
+<div class="line">├── README.md             # Project documentation</div>
+<div class="line">└── .gitignore</div>
+</div><!-- fragment --><hr  />
+<h2><a class="anchor" id="autotoc_md26"></a>
+🧪 Testing</h2>
+<p>The project includes unit tests that are automatically built by CMake.</p>
+<p>After building the project, run the test executable from the <code>build</code> directory:</p>
+<div class="fragment"><div class="line">./snakeTests</div>
+</div><!-- fragment --><p>On Windows:</p>
+<div class="fragment"><div class="line">snakeTests.exe</div>
+</div><!-- fragment --><p>No additional setup or configuration is required.</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md28"></a>
+💡 Customization Ideas</h2>
+<ul>
+<li>Increasing difficulty over time <br  />
+</li>
+<li>High-score persistence (file-based or database) <br  />
+</li>
+<li>Visual themes or grid customization <br  />
+</li>
+<li>Pause / resume functionality <br  />
+</li>
+<li>Sound toggle or volume control <br  />
+</li>
+<li>Mobile or touch support <br  />
+</li>
+</ul>
+<hr  />
+<h2><a class="anchor" id="autotoc_md30"></a>
+🤝 Contributing</h2>
+<p>Contributions are welcome.</p>
+<p>If you’d like to improve the project:</p>
+<ol type="1">
+<li>Fork the repository <br  />
+</li>
+<li>Create a feature branch <br  />
+</li>
+<li>Commit your changes with clear messages <br  />
+</li>
+<li>Open a pull request <br  />
+</li>
+</ol>
+<hr  />
+<h2><a class="anchor" id="autotoc_md32"></a>
+⚠️ License</h2>
+<p>This project does <b>not</b> include a license.</p>
+<p>All rights are reserved by the author unless explicitly stated otherwise.</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md34"></a>
+📬 Acknowledgements</h2>
+<p>Created by <b>tameraktekin</b>. <br  />
+ Inspired by classic arcade games and built as a practical exploration of C++ and Qt development.</p>
+<hr  />
+<p>Enjoy the game! 🐍 </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
